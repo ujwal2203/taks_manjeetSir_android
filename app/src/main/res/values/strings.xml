@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Task 1 26:02:2026</string>
+    <string name = "nextButton1"> next 1 </string>
+    <string name = "nextButton2"> next 2 </string>
+    <string name = "nextButton3"> next 3 </string>
+    <string name = "nextButton4"> next 4 </string>
+</resources>
