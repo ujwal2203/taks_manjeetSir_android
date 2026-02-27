@@ -14,5 +14,13 @@ class d_activity : ComponentActivity() {
             val intent = Intent(this@d_activity, MainActivity::class.java)
             startActivity(intent)
         }
+
+        onBackPressedDispatcher.addCallback(this) {
+            val intent = Intent(this@d_activity, MainActivity::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+            }
+
+            startActivity(intent)
+        }
     }
 }
