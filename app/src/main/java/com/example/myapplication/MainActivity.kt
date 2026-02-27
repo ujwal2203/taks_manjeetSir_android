@@ -18,6 +18,11 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this@MainActivity, b_activity::class.java)
             startActivity(intent)
         }
+
+        onBackPressedDispatcher.addCallback(this) {
+            Log.d("Main activity", "pressed the back navigation button")
+            finishAffinity()
+        }
     }
 }
 
